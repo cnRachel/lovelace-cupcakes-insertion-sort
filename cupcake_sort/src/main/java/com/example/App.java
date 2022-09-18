@@ -20,6 +20,18 @@ public class App
         System.out.println("----- Unsorted array -----");
         print(cupcakeNameArray);
 
+        //sort
+        insertionSort(cupcakeNameArray);
+
+        //print sorted list
+        System.out.println("----- Sorted array----- ");
+        print(cupcakeNameArray);
+
+        //print statistics
+        System.out.println("----- Statistics -----");
+        System.out.printf("Size of array = %d\n", cupcakeNameArray.length);
+        System.out.printf("Count = %d\n", count);
+
     }
 
     //print cupcake array
@@ -43,4 +55,6 @@ public class App
 
         return arr;
     }
+
+    
 }
