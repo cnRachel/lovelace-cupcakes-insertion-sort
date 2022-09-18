@@ -1,0 +1,88 @@
+[
+    {
+        "id": 1000,
+        "name": "Tiramisu Bonbon",
+        "price": 6.01,
+        "frosting": [
+            "Chocolate",
+            "Buttercream"
+        ]
+    },
+    {
+        "id": 1001,
+        "name": "Tiramisu Gummies",
+        "price": 11.19,
+        "frosting": [
+            "Fudge"
+        ]
+    },
+    {
+        "id": 1002,
+        "name": "Tiramisu Chups",
+        "price": 5.51,
+        "frosting": [
+            "Chocolate"
+        ]
+    },
+    {
+        "id": 1003,
+        "name": "Tiramisu Bar",
+        "price": 5.66,
+        "frosting": [
+            "Chocolate",
+            "Buttercream"
+        ]
+    },
+    {
+        "id": 1004,
+        "name": "Tiramisu Claw",
+        "price": 5.09,
+        "frosting": [
+            "Fudge"
+        ]
+    },
+    {
+        "id": 1005,
+        "name": "Tiramisu Pastry",
+        "price": 11.73,
+        "frosting": [
+            "Vanilla Cream Cheese",
+            "Buttercream"
+        ]
+    },
+    {
+        "id": 1006,
+        "name": "Tiramisu Biscuit",
+        "price": 7.01,
+        "frosting": [
+            "Whipped Cream Frosting",
+            "Chocolate"
+        ]
+    },
+    {
+        "id": 1007,
+        "name": "Tiramisu Lollipop",
+        "price": 9.26,
+        "frosting": [
+            "Chocolate",
+            "Whipped Cream Frosting"
+        ]
+    },
+    {
+        "id": 1008,
+        "name": "Tiramisu Fruitcake",
+        "price": 5.43,
+        "frosting": [
+            "Buttercream",
+            "Vanilla Cream Cheese"
+        ]
+    },
+    {
+        "id": 1009,
+        "name": "Tiramisu Donut",
+        "price": 5.59,
+        "frosting": [
+            "Vanilla Cream Cheese"
+        ]
+    }
+]

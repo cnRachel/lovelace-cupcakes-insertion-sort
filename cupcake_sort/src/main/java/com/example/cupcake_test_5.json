@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1000,
+        "name": "B",
+        "price": 6.01,
+        "frosting": [
+            "Chocolate",
+            "Buttercream"
+        ]
+    },
+    {
+        "id": 1001,
+        "name": "G",
+        "price": 11.19,
+        "frosting": [
+            "Fudge"
+        ]
+    },
+    {
+        "id": 1002,
+        "name": "C",
+        "price": 5.51,
+        "frosting": [
+            "Chocolate"
+        ]
+    },
+    {
+        "id": 1003,
+        "name": "A",
+        "price": 5.66,
+        "frosting": [
+            "Chocolate",
+            "Buttercream"
+        ]
+    },
+    {
+        "id": 1003,
+        "name": "Z",
+        "price": 5.66,
+        "frosting": [
+            "Chocolate",
+            "Buttercream"
+        ]
+    }
+]
