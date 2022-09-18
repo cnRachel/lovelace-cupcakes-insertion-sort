@@ -1,15 +1,16 @@
 package com.example;
 
 import org.json.simple.*;
-import org.w3c.dom.NameList;
+
 
 public class App 
 {
     private static int count = 0;
     public static void main( String[] args )
     {
+        
         String fileName = "C:/Users/rache/Documents/GitHub/lovelace-cupcakes-insertion-sort/cupcake_sort/src/main/java/com/example/cupcake_3906.json";
-        //String fileName = "C:/Users/rache/Documents/GitHub/lovelace-cupcakes-insertion-sort/cupcake_sort/src/main/java/com/example/cupcake_test_10.json";
+        //String fileName = "C:/Users/rache/Documents/GitHub/lovelace-cupcakes-insertion-sort/cupcake_sort/src/main/java/com/example/cupcake_test_5.json";
 
         //read cupcake names
         JSONArray cupcakeArray = JSONFile.readArray(fileName);
@@ -24,11 +25,11 @@ public class App
         insertionSort(cupcakeNameArray);
 
         //print sorted list
-        //System.out.println("----- Sorted array----- ");
-        //print(cupcakeNameArray);
+        System.out.println("----- Sorted array----- ");
+        print(cupcakeNameArray);
 
         //print statistics
-        System.out.println("----- Statistics -----");
+        System.out.println("------ Statistics ------");
         System.out.printf("Size of array = %d\n", cupcakeNameArray.length);
         System.out.printf("Count = %d\n", count);
 
