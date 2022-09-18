@@ -1,13 +1,46 @@
 package com.example;
 
-/**
- * Hello world!
- *
- */
+import org.json.simple.*;
+import org.w3c.dom.NameList;
+
 public class App 
 {
+    private static int count = 0;
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        String fileName = "C:/Users/rache/Documents/GitHub/lovelace-cupcakes-insertion-sort/cupcake_sort/src/main/java/com/example/cupcake_3906.json";
+        //String fileName = "C:/Users/rache/Documents/GitHub/lovelace-cupcakes-insertion-sort/cupcake_sort/src/main/java/com/example/cupcake_test_10.json";
+
+        //read cupcake names
+        JSONArray cupcakeArray = JSONFile.readArray(fileName);
+        String[] cupcakeNameArray = nameArray(cupcakeArray);
+        System.out.println(cupcakeNameArray);
+
+        //print unsorted list
+        System.out.println("----- Unsorted array -----");
+        print(cupcakeNameArray);
+
+    }
+
+    //print cupcake array
+    public static void print(String[] cupcakeNameArray) {
+        System.out.printf("Number\tName\n");
+        System.out.printf("------\t---------------\n");
+        for (int i = 0; i < cupcakeNameArray.length; i++) {
+            System.out.printf("%04d\t%s\n", i, cupcakeNameArray[i]);
+        }
+    }
+
+    //get array of cupcake names
+    public static String[] nameArray(JSONArray cupcakeArray) {
+        String[] arr = new String[cupcakeArray.size()];
+
+        for (int i = 0; i < cupcakeArray.size(); i++) {
+            JSONObject o = (JSONObject) cupcakeArray.get(i);
+            String name = (String) o.get("name");
+            arr[i] = name;
+        }
+
+        return arr;
     }
 }
