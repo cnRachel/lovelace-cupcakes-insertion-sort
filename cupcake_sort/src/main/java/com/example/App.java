@@ -14,18 +14,18 @@ public class App
         //read cupcake names
         JSONArray cupcakeArray = JSONFile.readArray(fileName);
         String[] cupcakeNameArray = nameArray(cupcakeArray);
-        System.out.println(cupcakeNameArray);
+        //System.out.println(cupcakeNameArray);
 
         //print unsorted list
-        System.out.println("----- Unsorted array -----");
-        print(cupcakeNameArray);
+        //System.out.println("----- Unsorted array -----");
+        //print(cupcakeNameArray);
 
         //sort
         insertionSort(cupcakeNameArray);
 
         //print sorted list
-        System.out.println("----- Sorted array----- ");
-        print(cupcakeNameArray);
+        //System.out.println("----- Sorted array----- ");
+        //print(cupcakeNameArray);
 
         //print statistics
         System.out.println("----- Statistics -----");
@@ -56,5 +56,18 @@ public class App
         return arr;
     }
 
-    
+    public static void insertionSort(String[] arr) {
+        for (int i = 1; i < arr.length; i++) {
+            String key = arr[i];
+            
+            int j = i-1;
+            while (j >= 0 && arr[j].compareTo(key) > 0) {
+                arr[j+1] = arr[j];
+                j--;
+                count++;
+            }
+            arr[j+1] = key;
+        }
+    }
+
 }
